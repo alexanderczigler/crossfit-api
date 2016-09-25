@@ -1,6 +1,7 @@
 crossfit-api:
   build: .
-  ports: 3000:3000
+  ports:
+    - 3000:3000
   links:
     - crossfit-rethink:rethink
   environment:
