@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/ilix/crossfit-api#readme",
   "dependencies": {
+    "koa": "^1.2.4",
+    "koa-route": "^2.4.2",
     "rethink-migrate": "^1.3.1",
-    "rethinkdb": "^2.3.3"
+    "rethinkdb": "^2.3.3",
+    "rethinkdbdash": "^2.3.23"
   }
 }
