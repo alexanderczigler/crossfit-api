@@ -1,11 +1,11 @@
 exports.up = function (r, connection) {
   return Promise.all([
-    r.tableCreate('exercises').run(connection)
+    r.tableCreate('movements').run(connection)
   ])
 }
 
 exports.down = function (r, connection) {
   return Promise.all([
-    r.tableDrop('exercises').run(connection)
+    r.tableDrop('movements').run(connection)
   ])
 }
