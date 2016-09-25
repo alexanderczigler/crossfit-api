@@ -5,6 +5,7 @@ RUN npm install --production
 
 ADD ./database.json database.json
 ADD ./index.js index.js
+ADD ./lib lib
 ADD ./migrations migrations
 
 CMD npm run start
