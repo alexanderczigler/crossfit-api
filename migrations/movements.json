@@ -7,7 +7,7 @@
     "distance": true,
     "calories": true,
     "reps": true,
-    "requiresTools": true,
+    "requiresTools": false,
     "time": false
   },
   {
