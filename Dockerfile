@@ -1,4 +1,4 @@
-FROM node:6
+FROM node:6.5
 
 ADD ./package.json package.json
 RUN npm install --production
