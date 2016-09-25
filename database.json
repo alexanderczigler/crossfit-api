@@ -1,0 +1,6 @@
+{
+  "host": "rethink",
+  "port": 28015,
+  "db": "crossfit_api",
+  "logLevel": "info"
+}
