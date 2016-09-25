@@ -11,3 +11,4 @@ crossfit-rethink:
   image: rethinkdb
   ports:
     - 8080:8080
+    - 28015:28015
