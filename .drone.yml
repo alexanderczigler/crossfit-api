@@ -1,2 +1,4 @@
 build:
-  image: crossfit-api
+  image: docker
+  commands:
+    - docker build -t crossfit-api .
