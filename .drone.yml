@@ -1,5 +1,5 @@
 build:
-  image: docker
+  image: ilix/docker-builder
   commands:
     - hostname
     - docker version
