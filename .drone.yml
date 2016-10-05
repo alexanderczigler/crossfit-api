@@ -2,8 +2,12 @@ build:
   image: ilix/docker-builder
   commands:
     - docker build -t crossfit-api .
-    - docker login -u $$DOCKER_USER -p $$DOCKER_PASS
-    - docker tag crossfit-api ilix/crossfit-api
-    - docker push ilix/crossfit-api
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
+
+publish:
+  docker:
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: code@ilix.se
+    repo: ilix/crossfit-api
