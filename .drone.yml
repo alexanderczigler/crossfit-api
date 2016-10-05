@@ -4,3 +4,7 @@ publish:
     password: $$DOCKER_PASS
     email: code@ilix.se
     repo: ilix/crossfit-api
+
+cache:
+  mount:
+    - docker/image.tar
