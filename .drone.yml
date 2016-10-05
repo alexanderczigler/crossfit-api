@@ -1,6 +1,12 @@
-build:
-  image: ilix/docker-builder
-  commands:
-    - docker build -t crossfit-api .
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
+pipeline:
+  build:
+    image: ilix/docker-builder
+    commands:
+      - docker build -t crossfit-api .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  publish:
+    image: plugins/docker
+    repo: ilix/crossfit-api
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
