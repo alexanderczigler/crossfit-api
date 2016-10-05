@@ -1,6 +1,6 @@
 build:
   image: ilix/docker-builder
   commands:
-    - sudo docker build -t crossfit-api .
+    - docker build -t crossfit-api .
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
