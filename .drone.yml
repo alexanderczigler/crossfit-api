@@ -1,4 +1,7 @@
 build:
   image: docker
   commands:
+    - hostname
+    - docker version
+    - whoami
     - docker build -t crossfit-api .
