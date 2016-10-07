@@ -5,6 +5,6 @@ publish:
     email: code@ilix.se
     repo: ilix/crossfit-api
 
-cache:
-  mount:
-    - docker/image.tar
+#cache:
+#  mount:
+#    - docker/image.tar
