@@ -1,9 +1,10 @@
-publish:
-  docker:
-    username: ${DOCKER_USER}
-    password: ${DOCKER_PASS}
-    email: code@ilix.se
-    repo: ilix/crossfit-api
+pipeline:
+  publish:
+    docker:
+      username: ${DOCKER_USER}
+      password: ${DOCKER_PASS}
+      email: code@ilix.se
+      repo: ilix/crossfit-api
 
 #cache:
 #  mount:
