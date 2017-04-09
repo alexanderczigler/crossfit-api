@@ -9,4 +9,6 @@ ADD ./index.js index.js
 ADD ./lib lib
 ADD ./migrations migrations
 
+RUN touch .env
+
 CMD npm run start
